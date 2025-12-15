@@ -203,25 +203,25 @@ h2 {
 }
 
 .logo-box div {
-        width: 220px;
-        height: 220px;
-        background-color: #ddd;
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 14px;
-        color: #555;
-    }
+    width: 220px;
+    height: 220px;
+    background-color: #ddd;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #555;
+}
 
 /* added: allow actual image files inside .logo-box */
-    .logo-box img {
-        width: 220px;
-        height: 220px;
-        object-fit: cover;
-        border-radius: 20px;
-        display: block;
-    }
+.logo-box img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
 
 footer {
     background-color: var(--black);
@@ -270,12 +270,18 @@ footer {
 
 .lightbox{ display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.9); align-items: center; justify-content: center; z-index: 2000; }
 .lightbox.active{ display: flex; }
-.lightbox .lightbox-content{ max-width: 40vw; max-height: 40vh; position: relative; display: flex; align-items: center; justify-content: center; }
+.lightbox .lightbox-content{ max-width: 80vw; max-height: 80vh; position: relative; display: flex; align-items: center; justify-content: center; }
 .lightbox img{ max-width: 100%; max-height: 100%; width: auto; height: auto; display: block; margin: 0 auto; border-radius: 8px; }
 .lightbox .close, .lightbox .prev, .lightbox .next{ position: absolute; color: #fff; font-size: 26px; background: rgba(0,0,0,0.4); padding: 8px 10px; border-radius: 6px; cursor: pointer; user-select: none; }
 .lightbox .close{ top: 20px; right: 20px; }
 .lightbox .prev{ left: 20px; top: 50%; transform: translateY(-50%); }
 .lightbox .next{ right: 20px; top: 50%; transform: translateY(-50%); }
+
+@media (max-width: 800px) {
+    .destination-hero { height: 220px; }
+    .destination-content { padding: 30px; }
+    .lightbox .lightbox-content { max-width: 95vw; max-height: 90vh; }
+}
 </style>
 </head>
 <body>
@@ -308,10 +314,10 @@ footer {
     <h2>Academic Institution</h2>
     <h1 class="section-emphasis">Holy Cross of Davao College</h1>
     <p>
-    Holy Cross of Davao College is a respected academic institution that emphasizes holistic education, professional competence, and values-based learning. As a student of the Bachelor of Science in Information Technology program, this educational tour served as an extension of classroom learning by providing real-world exposure to industry environments and practices.
+    Holy Cross of Davao College is a respected academic institution that emphasizes holistic education, professional competence, and values-based learning. As a student of the Bachelor of Science in Information Technology, I was able to see how classroom learning links to industry practice.
     </p>
     <p>
-    The institution actively supports experiential learning opportunities such as educational tours to help students bridge theoretical knowledge with practical application, preparing them for future careers in the IT industry.
+    The institution actively supports experiential learning opportunities such as educational tours to help students bridge theoretical knowledge with practical application, preparing them for future careers.
     </p>
     <div class="logo-box">
         <img src="images/HCDC.jpg" alt="Holy Cross of Davao College logo" loading="lazy">
@@ -335,7 +341,7 @@ footer {
 <section>
 <h2>Tour Destinations</h2>
 <p>
-This educational tour provided valuable exposure to real-world IT environments, professional workplace practices, and enterprise-level technologies. Each destination offered unique insights that contributed to both technical knowledge and professional development.
+This educational tour provided valuable exposure to real-world IT environments, professional workplace practices, and enterprise-level technologies. Each destination offered unique insights that contributed to our understanding of modern IT operations.
 </p>
 
 <div class="destination" id="pldt">
@@ -361,9 +367,9 @@ This educational tour provided valuable exposure to real-world IT environments, 
         <div class="subsection">
             <h4>Gallery</h4>
             <div class="stacked-gallery" data-images="images/PLDTVITRO.jpg, images/PLDT1.jpg, images/PLDT2.jpg">
-                <div class="thumb" style="background-image:url('PLDTVITRO.jpg')"></div>
-                <div class="thumb" style="background-image:url('PLDT1.jpg')"></div>
-                <div class="thumb" style="background-image:url('PLDT2.jpg')"></div>
+                <div class="thumb" style="background-image:url('images/PLDTVITRO.jpg')"></div>
+                <div class="thumb" style="background-image:url('images/PLDT1.jpg')"></div>
+                <div class="thumb" style="background-image:url('images/PLDT2.jpg')"></div>
                 <div class="count-badge">+3</div>
             </div>
         </div>
@@ -379,6 +385,13 @@ This educational tour provided valuable exposure to real-world IT environments, 
             <h4>Details</h4>
             <p>The lunch break at Viking's SM Lanang provided time for rest, reflection, and social interaction after the morning technical sessions.</p>
             <p>This experience emphasized teamwork, communication, and professional camaraderie among students.</p>
+        </div>
+        <div class="subsection">
+            <h4>Gallery</h4>
+            <div class="stacked-gallery" data-images="images/vikings.jpg">
+                <div class="thumb" style="background-image:url('images/vikings.jpg')"></div>
+                <div class="count-badge">+1</div>
+            </div>
         </div>
     </div>
 </div>
@@ -408,9 +421,9 @@ This educational tour provided valuable exposure to real-world IT environments, 
         <div class="subsection">
             <h4>Gallery</h4>
             <div class="stacked-gallery" data-images="images/jairosoft.png, images/jairosoft1.jpg, images/jairosoft2.jpg, images/jairosoft3.jpg, images/jairosoft4.jpg">
-                <div class="thumb" style="background-image:url('jairosoft.png')"></div>
-                <div class="thumb" style="background-image:url('jairosoft1.jpg')"></div>
-                <div class="thumb" style="background-image:url('jairosoft2.jpg')"></div>
+                <div class="thumb" style="background-image:url('images/jairosoft.png')"></div>
+                <div class="thumb" style="background-image:url('images/jairosoft1.jpg')"></div>
+                <div class="thumb" style="background-image:url('images/jairosoft2.jpg')"></div>
                 <div class="count-badge">+5</div>
             </div>
         </div>
@@ -427,18 +440,21 @@ This educational tour provided valuable exposure to real-world IT environments, 
 (function(){
     function parseImages(el){
         var attr = el.getAttribute('data-images');
-        if(attr){ return attr.split(',').map(s=>s.trim()).filter(Boolean); }
+        if(attr){
+            // split on commas and normalize whitespace
+            return attr.split(',').map(function(s){ return s.trim(); }).filter(Boolean);
+        }
         // fallback: collect from .thumb styles
         var thumbs = Array.from(el.querySelectorAll('.thumb'));
-        return thumbs.map(t=>{
-            var m = (t.style.backgroundImage||"").match(/url\(["']?(.+)["']?\)/);
+        return thumbs.map(function(t){
+            var m = (t.style.backgroundImage||"").match(/url\\(["']?(.+?)["']?\\)/);
             return m? m[1] : null;
         }).filter(Boolean);
     }
 
     function createLightbox(){
         var lb = document.createElement('div'); lb.className = 'lightbox';
-        lb.innerHTML = '<div class="lightbox-content"><div class="close">✕</div><div class="prev">◀</div><div class="next">▶</div><img src="" alt=""/></div>';
+        lb.innerHTML = '<div class="lightbox-content"><div class="close" role="button" aria-label="Close">✕</div><div class="prev" role="button" aria-label="Previous">◀</div><div class="next" role="button" aria-label="Next">▶</div><img src="" alt=""/></div>';
         document.body.appendChild(lb);
         return lb;
     }
@@ -452,29 +468,46 @@ This educational tour provided valuable exposure to real-world IT environments, 
     var currentIndex = 0;
 
     function openGallery(images, index){
-        currentGallery = images; currentIndex = index || 0;
+        currentGallery = images || [];
+        currentIndex = typeof index === 'number' ? index : 0;
+        if(!currentGallery.length) return;
         imgEl.src = currentGallery[currentIndex];
         lightbox.classList.add('active');
     }
     function closeGallery(){ lightbox.classList.remove('active'); imgEl.src=''; }
-    function showIndex(i){ if(!currentGallery.length) return; currentIndex = (i+currentGallery.length)%currentGallery.length; imgEl.src = currentGallery[currentIndex]; }
+    function showIndex(i){ if(!currentGallery.length) return; currentIndex = (i + currentGallery.length) % currentGallery.length; imgEl.src = currentGallery[currentIndex]; }
 
     document.querySelectorAll('.stacked-gallery').forEach(function(el){
         var images = parseImages(el);
         var thumbs = el.querySelectorAll('.thumb');
         // update count badge if present
         var badge = el.querySelector('.count-badge');
-        if(badge){ badge.textContent = '+'+images.length; }
+        if(badge){
+            badge.textContent = '+' + images.length;
+        }
+        // clicking opens the gallery at the first image
         el.addEventListener('click', function(e){
             openGallery(images, 0);
         });
+        // allow clicking a particular thumb to open that index (if clicked directly)
+        thumbs.forEach(function(t, idx){
+            t.addEventListener('click', function(ev){
+                ev.stopPropagation();
+                openGallery(images, idx);
+            });
+        });
     });
 
-    closeBtn.addEventListener('click', closeGallery);
+    closeBtn.addEventListener('click', function(e){ e.stopPropagation(); closeGallery(); });
     lightbox.addEventListener('click', function(e){ if(e.target===lightbox) closeGallery(); });
     prevBtn.addEventListener('click', function(e){ e.stopPropagation(); showIndex(currentIndex-1); });
     nextBtn.addEventListener('click', function(e){ e.stopPropagation(); showIndex(currentIndex+1); });
-    document.addEventListener('keydown', function(e){ if(!lightbox.classList.contains('active')) return; if(e.key==='Escape') closeGallery(); if(e.key==='ArrowLeft') showIndex(currentIndex-1); if(e.key==='ArrowRight') showIndex(currentIndex+1); });
+    document.addEventListener('keydown', function(e){
+        if(!lightbox.classList.contains('active')) return;
+        if(e.key === 'Escape') closeGallery();
+        if(e.key === 'ArrowLeft') showIndex(currentIndex-1);
+        if(e.key === 'ArrowRight') showIndex(currentIndex+1);
+    });
 })();
 </script>
 
